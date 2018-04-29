@@ -4,6 +4,8 @@ using System.Collections;
 public class LevelManager : MonoBehaviour {
 
 public float autoLoadNextLevel;
+
+
 	
 void Awake(){
 		DontDestroyOnLoad(gameObject);
@@ -11,6 +13,7 @@ void Awake(){
 
 void Start(){
 	Invoke ("LoadNextLevel", autoLoadNextLevel);
+
 }
 
 public void LoadLevel(string name){
